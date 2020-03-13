@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    Amount<input type="text" name="tien" id="1"value="" > </br>
+    from currency <select name="from currency" ><option value="VND">VND</option></select><br>
+    to currency <select name="to currency"><option value="USD">USD</option></select><br>
+    <button type="botton" onclick="chuyendoi();">convert</button><br>
+    <p id="2"></p>
+<script>
+    function chuyendoi() {
+        let x=document.getElementById("1");
+        let y = x.value/23000;
+        document.getElementById(2).innerHTML=y;
+    }
+</script>
+</body>
+</html>
