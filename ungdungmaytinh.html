@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td><input type="number" id="1" name="sothunhat" value=""></td>
+        <td><input type="number" id="2" name="sothuhai" value=""></td>
+    </tr>
+    <tr>
+        <td><button type="button" id="cong" name="cong" onclick="phepcong()">phep cong</button></td>
+        <td><button type="button" id="tru" name="tru" onclick="pheptru()">phep tru</button></td>
+        <td><button type="button" id="nhan" name="nhan" onclick="phepnhan()">phep nhan</button></td>
+        <td><button type="button" id="chia" name="chia" onclick="phepchia()">phep chia</button></td>
+    </tr>
+</table>
+<p id="ketqua">ket qua</p>
+<script>
+    function phepcong() {
+       let x=document.getElementById("1");
+       let y=document.getElementById("2");
+        x = parseInt(x.value);
+        y = parseInt(y.value);
+        z = x+y;
+       document.getElementById("ketqua").innerHTML=z;
+
+    }
+    function pheptru() {
+        let x=document.getElementById("1");
+        let y=document.getElementById("2");
+        let z=parseInt(x.value-y.value);
+        document.getElementById("ketqua").innerHTML= z;
+
+    }
+    function phepnhan() {
+        let x=document.getElementById("1");
+        let y=document.getElementById("2");
+        let z=parseInt(x.value*y.value);
+        document.getElementById("ketqua").innerHTML= z;
+
+    }
+    function phepchia() {
+        let x=document.getElementById("1");
+        let y=document.getElementById("2");
+        let z=parseInt(x.value/y.value);
+        document.getElementById("ketqua").innerHTML=z ;
+
+    }
+</script>
+</body>
+</html>
