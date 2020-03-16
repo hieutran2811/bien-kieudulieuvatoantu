@@ -2,9 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    function sohoanhao(n){
+        for(let i=1;i<=n/2;i++){
+            let sum =0;
+            if(n % i ==0){
+                 sum+=i;
+            }
+        }
+        return sum===n;
+    }
+</script>
 </body>
 </html>
